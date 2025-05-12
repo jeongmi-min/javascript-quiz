@@ -5,12 +5,41 @@ body {
   margin: 0;
   padding: 0;
   color: black;
+  background: rgb(219, 181, 187);
+  font-size: 18px;
+}
+
+main {
+  margin-left: 30px;
+}
+
+fieldset {
+  margin: 30px 0;
+  padding-bottom: 20px;
+}
+fieldset input {
+  cursor: pointer;
+}
+
+#final-answer {
+  display: block;
+  margin: 30px auto;
+  border: none;
+  width: 150px;
+  height: 60px;
+  background: white;
+  font-size: 18px;
+}
+#final-answer:hover,
+#final-answer:active {
+  background: black;
+  color: white;
 }
 
 /* modal */
 
 .modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -63,7 +92,7 @@ body {
   font-size: 18px;
 }
 
-input {
+.content-form input {
   margin-top: 15px;
   border: 1px solid black;
   border-radius: 5px;

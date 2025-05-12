@@ -1,3 +1,9 @@
+/* <main> */
+const questionRadios = document.getElementById("question-radios");
+const finalAnswer = document.getElementById("final-answer");
+
+/* <modal> */
+
 const modal = document.getElementById("modal");
 const modalCloseButton = document.getElementById("modal-close-btn");
 const contentForm = document.getElementById("content-form");
@@ -5,9 +11,9 @@ const modalText = document.getElementById("modal-text");
 const modalSubmitBtn = document.getElementById("modal-submit-btn");
 const modalResetBtn = document.getElementById("modal-reset-btn");
 
-setTimeout(function () {
-  modal.style.display = "inline";
-}, 1500);
+// setTimeout(function () {
+//   modal.style.display = "inline";
+// }, 1500);
 
 modalCloseButton.addEventListener("click", function () {
   modal.style.display = "none";
