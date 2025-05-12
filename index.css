@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+/* modal */
+
+.modal {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 400px;
+  width: 350px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px 2px black;
+  background-color: skyblue;
+  color: black;
+
+  text-align: center;
+}
+
+.close-modal-btn-container {
+  text-align: right;
+  margin: 9px;
+}
+
+#modal-close-btn {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: whitesmoke;
+}
+
+/* .modal-close-btn:hover,
+.modal-close-btn:active {
+  color: black;
+  cursor: pointer;
+} */
+
+#modal-close-btn:disabled {
+  color: black;
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.modal-title {
+  font-size: 25px;
+  margin: 0 0 10px 0;
+}
+
+#modal-text {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+input {
+  margin-top: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+}
+
+#modal-submit-btn,
+#modal-reset-btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 10px;
+  background: white;
+}
+#modal-submit-btn:hover,
+#modal-reset-btn:hover {
+  background: black;
+  color: white;
+}

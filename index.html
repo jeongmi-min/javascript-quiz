@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="modal" id="modal">
+      <div class="close-modal-btn-container">
+        <button id="modal-close-btn" disabled>X</button>
+      </div>
+      <h2 class="modal-title">경품 응모</h2>
+      <p id="modal-text">경품을 응모해보세요</p>
+
+      <form id="content-form">
+        <input type="text" name="fullName" placeholder="name" required />
+        <input type="email" name="email" placeholder="email" required />
+        <input
+          type="number"
+          name="phoneNumber"
+          placeholder="phone number"
+          required
+        />
+        <div id="modal-choice-btns">
+          <button id="modal-submit-btn" type="submit">제출하기</button>
+          <button id="modal-reset-btn" type="reset">리셋하기</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
