@@ -9,9 +9,16 @@ finalAnswerBtn.addEventListener("click", function (event) {
   boxScore.style.display = "block";
   score.textContent = 0;
 
-  const correctAnswers = { q1: 20, q2: 20, q3: 20, q4: 20, q5: 20 };
+  const correctAnswers = {
+    q1: "6",
+    q2: "2",
+    q3: "female",
+    q4: "사",
+    q5: "051",
+  };
 
   let userScore = 0;
+  const scorePoint = 20;
 });
 
 /* <modal> */
