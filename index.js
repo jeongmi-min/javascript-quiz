@@ -10,15 +10,26 @@ finalAnswerBtn.addEventListener("click", function (event) {
   score.textContent = 0;
 
   const correctAnswers = {
-    q1: "6",
-    q2: "2",
-    q3: "female",
-    q4: "사",
-    q5: "051",
+    question1: "6",
+    question2: "2",
+    question3: "female",
+    question4: "사",
+    question5: "051",
   };
 
   let userScore = 0;
   const scorePoint = 20;
+
+  for (let key in correctAnswers) {
+    const selected = document.querySelector(`input[name="${key}"]:checked`);
+    if (selected && selected.value === correctAnswers[key]) {
+      userScore += scorePoint;
+    }
+  }
+
+  score.textContent = userScore;
+
+  let currentScore = 0;
 });
 
 /* <modal> */
